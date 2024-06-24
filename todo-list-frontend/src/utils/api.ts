@@ -1,10 +1,23 @@
 import axios from 'axios';
 
-const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Ensure this URL is correct
-});
+const API_URL = 'http://localhost:5000/api/todos';
 
-export const fetchTodos = async () => {
-  const response = await api.get('/todos');
-  return response.data;
+export const getTodos = async () => {
+    const response = await axios.get(API_URL);
+    return response.data;
+};
+
+export const addTodo = async (todo: { title: string }) => {
+    const response = await axios.post(API_URL, todo);
+    return response.data;
+};
+
+export const updateTodo = async (id: string, todo: { title: string, completed: boolean }) => {
+    const response = await axios.put(`${API_URL}/${id}`, todo);
+    return response.data;
+};
+
+export const deleteTodo = async (id: string) => {
+    const response = await axios.delete(`${API_URL}/${id}`);
+    return response.data;
 };

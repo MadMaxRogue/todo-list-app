@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 84e91b9 (Update project)
 # To-Do List Application
 
 ## Introduction
@@ -84,3 +88,23 @@ This project is licensed under the MIT License.
     - Ensure that API endpoints in the backend are functioning as expected.
     - Run all unit tests to make sure they pass.
 
+<<<<<<< HEAD
+=======
+3. **Clean Up**:
+    - Check for and resolve any remaining warnings or errors in your console.
+    - Verify that there are no security vulnerabilities in the dependencies.
+
+### Submit Repository
+1. **Push Changes**:
+    - Make sure all your changes are committed.
+    - Push your changes to the remote repository:
+    
+    git add .
+    git commit -m "Final submission"
+    git push origin main
+    
+
+2. **Provide Access**:
+    - Ensure your repository is public or provide access to your reviewers.
+
+>>>>>>> 84e91b9 (Update project)
