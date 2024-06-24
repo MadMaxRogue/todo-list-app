@@ -1,110 +1,63 @@
-<<<<<<< HEAD
-=======
+# To-Do List App
 
->>>>>>> 84e91b9 (Update project)
-# To-Do List Application
+## Description
+This is a simple to-do list application built with Next.js, Express, and MongoDB. Users can add, update, and delete tasks.
 
-## Introduction
-This is a to-do list application built with Next.js for the frontend and Express.js for the backend. It includes TypeScript for type safety, Tailwind CSS for styling, Zod for data validation, and Prisma ORM for database management.
+## Features
+- Add new tasks
+- Update existing tasks
+- Delete tasks
 
-## Setup Instructions
+## Prerequisites
+- Node.js (v14 or later)
+- MongoDB
 
-### Frontend (Next.js)
-1. Navigate to the frontend directory:
-   
-   cd todo-list-frontend
-   
-2. Install dependencies:
-   
-   npm install
-  
-3. Run the development server:
-   
-   npm run dev
- 
+## Getting Started
 
-### Backend (Express.js)
-1. Navigate to the backend directory:
-   
-   cd todo-list-backend
-   
-2. Install dependencies:
-   
-   npm install
-   
-3. Set up the database:
-  
-   npx prisma migrate dev --name init
-  
-4. Run the server:
-   
-   npm run dev
-   
+### Backend Setup
+1. Navigate to the `todo-list-backend` directory:
+    ```sh
+    cd todo-list-backend
+    ```
 
-## Usage
-1. Open your browser and navigate to `http://localhost:3000` to view the application.
-2. Use the UI to add, delete, and manage your to-do items.
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-## Testing
-### Frontend
-To run the frontend tests:
+3. Create a `.env` file in the root of the `todo-list-backend` directory and add your MongoDB connection string:
+    ```env
+    MONGO_URI=mongodb://localhost:27017/todo-list
+    ```
 
-cd todo-list-frontend
-npm run test
+4. Start the backend server:
+    ```sh
+    npm run dev
+    ```
 
+### Frontend Setup
+1. Navigate to the `todo-list-frontend` directory:
+    ```sh
+    cd todo-list-frontend
+    ```
 
-### Backend
-To run the backend tests:
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-cd todo-list-backend
-npm run test
+3. Start the frontend server:
+    ```sh
+    npm run dev
+    ```
 
+4. Open your browser and go to `http://localhost:3000` to see the application.
 
-## Dependencies
-### Frontend
-- Next.js
-- Tailwind CSS
-- Axios
-- Jest
-- React Testing Library
-
-### Backend
-- Express.js
-- Prisma
-- Zod
+## Acknowledgements
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Next.js](https://nextjs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## License
 This project is licensed under the MIT License.
-
-
-### Final Review Checklist
-1. **Code Review**:
-    - Ensure all code is formatted and linted correctly.
-    - Remove any unused or commented-out code.
-    - Confirm that all functions and components are necessary and efficient.
-
-2. **Functionality Check**:
-    - Verify that all CRUD operations work correctly in the frontend.
-    - Ensure that API endpoints in the backend are functioning as expected.
-    - Run all unit tests to make sure they pass.
-
-<<<<<<< HEAD
-=======
-3. **Clean Up**:
-    - Check for and resolve any remaining warnings or errors in your console.
-    - Verify that there are no security vulnerabilities in the dependencies.
-
-### Submit Repository
-1. **Push Changes**:
-    - Make sure all your changes are committed.
-    - Push your changes to the remote repository:
-    
-    git add .
-    git commit -m "Final submission"
-    git push origin main
-    
-
-2. **Provide Access**:
-    - Ensure your repository is public or provide access to your reviewers.
-
->>>>>>> 84e91b9 (Update project)
